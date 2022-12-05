@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
     <!--DESLIGA O AUTOCOMPLETE E NÃO SUGERE NOME, TELEFONE ETC-->
-    <form action="cadastro.php" method="post" autocomplete="off"> 
-        <p><label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
-    </form>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </main>
     
 </body>
 </html>
