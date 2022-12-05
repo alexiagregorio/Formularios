@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--melhor sempre deixar o AUTOCOMPLETE "on" no FORM, ai personaliza o resto em baixo-->
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="12" placeholder="Nome do usuário" autocomplete="username"> <!--o REQUIRED deve estar no INPUT, ele impede que a pessoa envie o formulário sem antes preencher-->
+
+            <!--o MINLENGTH e o MAXLENGTH servem pra colocar quantidade mínima e máxima de caracteres em usuário, senha etc-->
+
+            <!--o SIZE controla o tamanho da caixinha, aqui como está o size="12" então vai dar para ver 12 caracteres por vez nele, se passar disso vai ter rolagem lateral-->
+
+            <!--o PLACEHOLDER serve como uma dica para o usuário do que colocar naquela caixa-->
+
+            <!--dentro da caixa você vai indicar o que é o AUTOCOMPLETE, nesse caso é o de usuário, então coloca username-->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="12" placeholder="mínimo de 8 letras" autocomplete="current-password"> <!--tem REQUIRED aqui também-->
+
+            <!--normalmente as senhas tem no mínimo 8 caracteres-->
+
+            <!--se você não mexer no SIZE, ele já vem com um tamanho padrão-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
