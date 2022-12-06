@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <main>
+        <p>Esse é um exemplo de formulário que contém e-mail e telefone agrupados por um <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/fieldset#:~:text=Conte%C3%BAdo%20de%20fluxo%20(en%2DUS,US)%20element%2C%20palpable%20content.&text=Um%20elemento%20opcional%2C%20seguido%20por%20conte%C3%BAdo%20de%20fluxo." target="_blank"><strong>fieldset</strong></a> com a legenda "Dados pessoais":</p>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                </p>
+                <p>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email">
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+                </p>
+            </fieldset>
+            <!--estudar mais sobre RegEx(expressões regulares/regular expressions)-->
+            <!--pesquisar HTML5 telefone pattern-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+
+    <footer>Site criado por <a href="https://github.com/alexiagregorio" target="_blank">Alexia Gregorio</a> para o Curso em Vídeo</footer>
+    
+</body>
+</html>
