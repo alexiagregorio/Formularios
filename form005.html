@@ -10,35 +10,33 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <main>
-        <p>Exemplo de formulário utilizando <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input/checkbox" target="_blank"><strong>checkbox</strong></a> e <a href="https://eduardosalerno.com.br/diferenca-entre-radio-button-e-checkbox/" target="_blank"><strong>radio button</strong></a></p>
-        <form action="cadastro.php" method="get" autocomplete="on">
-            <fieldset>
-                <legend>Sexo:</legend>
-                <input type="radio" name="sexo" id="isexmas" value="M"><label for="isexmas">Masculino</label><br>
-                <input type="radio" name="sexo" id="idsexfem" value="F"><label for="isexfem">Feminino</label><br>
-                <!--aqui eu só coloquei o mesmo NAME  para as duas opções porque nos botões de RADIO se você coloca o NAME diferente, você consegue marcar as duas opções ao mesmo tempo e o navegador não te deixa desmarcar uma das opções-->
-            </fieldset>
-            <fieldset>
-                <legend>Esportes favoritos</legend>
-                <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label><br>
-                <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
-                <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label><br>
-                <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label><br>
-            </fieldset>
-    </main>
-
-        <!--não esqueça de relacionar o INPUT com o LABEL, para poder clicar na palavra e funcionar normalmente, relacionar as duas coisas-->
-
-        <!--se você quiser que uma opção JÁ venha marcada, é só escrever CHECKED dentro do INPUT que você escolheu. EX: quero receber propagandas desse site pelo email etc.
-            Ficaria assim:
-        <input type="checkbox" name="esten" id="iesten" CHECKED><label for="iesten">Tênis</label>-->
-
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+        <main>
+            <p>Exemplo de formulário utilizando <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/Input/checkbox" target="_blank"><strong>checkbox</strong></a> e <a href="https://eduardosalerno.com.br/diferenca-entre-radio-button-e-checkbox/" target="_blank"><strong>radio button</strong></a></p>
+            <form action="cadastro.php" method="get" autocomplete="on">
+                <fieldset>
+                    <legend>Sexo:</legend>
+                    <input type="radio" name="sexo" id="isexmas" value="M"><label for="isexmas">Masculino</label><br>
+                    <input type="radio" name="sexo" id="idsexfem" value="F"><label for="isexfem">Feminino</label><br>
+                    <!--aqui eu só coloquei o mesmo NAME  para as duas opções porque nos botões de RADIO se você coloca o NAME diferente, você consegue marcar as duas opções ao mesmo tempo e o navegador não te deixa desmarcar uma das opções-->
+                </fieldset>
+                <fieldset>
+                    <legend>Esportes favoritos</legend>
+                    <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label><br>
+                    <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
+                    <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label><br>
+                    <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label><br>
+                </fieldset>
+            <!--não esqueça de relacionar o INPUT com o LABEL, para poder clicar na palavra e funcionar normalmente, relacionar as duas coisas-->
+            <!--se você quiser que uma opção JÁ venha marcada, é só escrever CHECKED dentro do INPUT que você escolheu. EX: quero receber propagandas desse site pelo email etc.
+                Ficaria assim:
+            <input type="checkbox" name="esten" id="iesten" CHECKED><label for="iesten">Tênis</label>-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            <a href="index.html" class="voltar">Voltar</a>
+                </form>
+        </main>
 
     <footer>Site criado por <a href="https://github.com/alexiagregorio" target="_blank">Alexia Gregorio</a> para o Curso em Vídeo</footer>
     
