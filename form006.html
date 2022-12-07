@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 6</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Sexto Formulário</h1>
+    <main>
+        <form action="cadastro.php" method="POST" autocomplete="on">
+            
+            <fieldset>
+            <p> 
+                <li>
+                    <label for="icor">Cor:</label>
+                    <input type="color" name="cor" id="icor" value="#00FF00" required>
+                </li>
+            </p>
+
+            
+
+            <p>
+                <li>
+                    <label for="ifoto">Foto do perfil:</label><br>
+                    <input type="file" name="foto" id="ifoto" required>
+                </li>
+                <!--para usar esse tipo de INPUT FILE, você tem que utilizar o METHOD POST, ele não funciona com o GET-->
+            </p>
+            
+            <p>
+                <li>
+                    <label for="inivel">Nível de Satisfação:</label>
+                    <input type="range" name="nivel" id="inivel" min="0" max="10" value="5" required>
+                </li>
+            </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+        <a href="index.html" class="voltar">Voltar</a>
+        </form>
+    </main>
+
+    <footer>Site criado por <a href="https://github.com/alexiagregorio" target="_blank">Alexia Gregorio</a> para o Curso em Vídeo</footer>
+    
+    
+</body>
+</html>

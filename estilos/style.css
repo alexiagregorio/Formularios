@@ -25,6 +25,10 @@ a:hover{
     color: red;
 }
 
+label{
+    font-weight: bolder;
+}
+
 ul li {
     padding: 5px;
     margin: 5px;
