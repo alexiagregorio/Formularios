@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Sétimo Formulário</h1>
+    <main>
+        <p>Formulários utilizando <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select#:~:text=Sum%C3%A1rio,pr%C3%A9%2Dselecionadas%20para%20o%20usu%C3%A1rio." target="_blank"><strong>select</strong></a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/option#:~:text=Em%20um%20formul%C3%A1rio%20Web%2C%20o,optgroup%3E%20ou%20." target="_blank"><strong>option</strong></a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/optgroup" target="_blank">optgroup</a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/datalist" target="_blank">datalist</a> e <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea#:~:text=O%20elemento%20HTML%20representa,coment%C3%A1rio%20ou%20formul%C3%A1rio%20de%20retorno." target="_blank">textarea</a>:</p>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="estado" id="iest">
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA"> Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+        
+                </select>
+            </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+                <!--colocando DATALIST você pode escolher as opções da lista, ou escrever a sua propria opção. Só não pode esquecer de colocar o LIST no INPUT com o mesmo ID-->
+            </p>
+            <p>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui."></textarea>
+                <!--com TEXTAREA é melhor usar o METHOD POST-->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            <a href="index.html" class="voltar">Voltar</a>
+        </form>
+    </main>
+    <footer>Site criado por <a href="https://github.com/alexiagregorio" target="_blank">Alexia Gregorio</a> para o Curso em Vídeo</footer>
+    
+</body>
+</html>
